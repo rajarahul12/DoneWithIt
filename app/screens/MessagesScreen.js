@@ -9,8 +9,10 @@ import ListItemDeleteAction from "../components/ListItemDeleteAction";
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
+    title:
+      "T1 ekf ejkfnkjeflkefwekfmlkwemfkwlemfklwemfe lwemdlkwemdlewmdlwemdlmewldmeldmewkld lmdlkmdlwemdlewmdlewmdewldmlwekdmd lmdlkmd",
+    description:
+      "D1 dlf eklflkemflkemflkemflewmflwmflwemflemfeffflwlkfewlfmlfmlmflmflmflmflmflmflmflwmflwmflkwmflwmflemg rknkjrnglnlfmlmflmflmflsfslgnlg efklfm",
     image: require("../assets/mosh.jpg"),
   },
   {
