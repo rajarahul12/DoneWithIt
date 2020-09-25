@@ -1,15 +1,21 @@
 import React from "react";
-import { StyleSheet, Image, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import AppText from "../components/AppText";
 import colors from "../config/colors";
 import ListItem from "../components/ListItem";
+import { Image } from "react-native-expo-image-cache";
 
 export default function ListingDetailsScreen({ route }) {
   const listing = route.params;
 
   return (
     <View>
-      <Image style={styles.image} source={listing.image} />
+      <Image
+        style={styles.image}
+        preview={{ uri: listing.images[0].thumbnailUrl }}
+        uri={listing.images[0].url}
+        tint="light"
+      />
       <View style={styles.detailsContainer}>
         <AppText style={styles.title}>{listing.title}</AppText>
         <AppText style={styles.price}>${listing.price}</AppText>
